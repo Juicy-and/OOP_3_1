@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 
 class Figure
@@ -17,7 +17,7 @@ public:
 class Triangle : public Figure
 {
 public:
-     void method1()
+      Triangle()
      {
         sides_count = 3;
         name = "Triangle: ";
@@ -27,7 +27,7 @@ public:
 class Quadrangle : public Figure
 {
 public:
-    void method2()
+      Quadrangle()
     {
         sides_count = 4;
         name = "Quadrangle: ";
@@ -40,8 +40,6 @@ int main()
     Figure figure;
     figure.method();
     Triangle triangle;
-    triangle.method1();
     Quadrangle quadrangle;
-    quadrangle.method2();
 }
 
